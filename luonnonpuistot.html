@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        header {
+            background: rgba(36, 43, 184, 0.521);
+            background-size: cover;
+            background-position: center;
+            min-height: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        body {
+            border: 50px solid rgba(36, 43, 184, 0.521);
+            background: url(pallas.jpg);
+            background-size: cover;
+        }
+
+        p {
+            background-color: rgba(196, 168, 223, 0.801);
+            
+        }
+       
+
+        .topnav {
+            margin: 0 auto;
+            width: fit-content; 
+            padding: 0;
+        }
+
+
+
+    </style>
+    <title>Tunturit ja luonnonpuistot</title>
+</head>
+<body>
+<!--nav alkaa-->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="topnav">
+                
+                
+                <ul>
+                    <li><a href="#">Etusivu</a></li>
+                    <li><a href="#">Rovaniemi</a></li>
+                    <li><a href="#">Aktiviteetit</a></li>
+                    <li><a href="#">Luonnonpuistot</a></li>
+                </ul>
+
+                    
+    
+
+            </div>
+          
+        </nav>
+    </header>
+<!--nav loppuu-->
+
+<!--Kuvat alkaa-->
+<section class="container section" id="photo">
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="lemmenjoki.png" alt="" class="responsive-img materialboxed">
+
+        </div>
+        <div class="col s12 l6">
+            
+            <p> Lemmenjoen kansallispuisto
+                Perustettu: 1956. Sijainti: Inari. Lemmenjoen kansallispuisto on Suomen suurin ja yksi koko Euroopan laajimmista tiettömistä erämaa-alueista. 
+                Se tunnetaan kullankaivajien historiasta ja Lemmenjoen laakson maisemista, joissa virtaa nimikkonjoki ja kohoavat jyrkät tunturit. 
+                Alueella voi meloa, patikoida tai osallistua jokiristeilylle, ja siellä elää uhanalaisia lajeja, kuten maakotka ja ahma.</p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l4 push-l5 offset-l1">
+            <img src="pallasyllas.png" alt="" class="responsive-img materialboxed ">
+
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+            
+            <p> Pallas–Yllästunturin kansallispuisto
+                Perustettu: 2005. Sijainti: Enontekiö, Muonio, Kittilä ja Kolari. Pallas–Yllästunturin kansallispuisto on yksi Suomen suosituimmista 
+                ja tunnetuin puhtaasta ilmastaan – se on mitattu Euroopan puhtaimmaksi. Tunturiketjut, laajat aapasuot 
+                ja ikivanhat metsät tarjoavat rauhaa ja unohtumattomia luontoelämyksiä. 
+                Alueella kulkee useita merkittyjä vaellusreittejä, kuten suosittu Hetta–Pallas-vaellusreitti.</p>
+
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col s12 l4">      
+            <img src="ukkansallispuisto.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                
+                <p> UKK kansallispuisto
+                    Urho Kaleva Kekkosen kansallispuisto
+                    Perustettu: 1983. Sijainti: Sodankylä, Savukoski ja Inari. Urho Kekkosen kansallispuisto on Suomen toiseksi suurin kansallispuisto 
+                    ja se tarjoaa laajat erämaat, tunturit ja kirkasvetiset purot. Alueella voi vaeltaa päiväretkistä viikkojen mittaisiin vaelluksiin. 
+                    Tuntureiden rinteillä ja metsissä voi nähdä poroja ja jopa revontulia. Puiston sydän on Saariselkä, josta lähtee monia vaellusreittejä.</p>
+    
+            </div>
+        </div>
+
+</section>
+<!--Kuvat loppuu-->
+
+
+
+
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav ();
+            $('.materialboxed').materialbox ();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.carousel').carousel();
+            
+        });
+       </script>
+</body>
+</html>
