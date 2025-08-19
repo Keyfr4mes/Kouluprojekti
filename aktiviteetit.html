@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="aktiviteetit.css">
+    <title>Aktiviteetit</title>
+</head>
+<body>
+    
+<!--nav alkaa-->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="topnav">
+                
+                
+                <ul>
+                    <li><a href="#">Etusivu</a></li>
+                    <li><a href="#">Rovaniemi</a></li>
+                    <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
+                    <li><a href="luonnonpuistot.html">Luonnonpuistot</a></li>
+                </ul>
+
+                    
+    
+
+            </div>
+          
+        </nav>
+    </header>
+<!--nav loppuu-->
+
+<!--Kuvat alkaa-->
+<!--Porot alkaa-->
+<section class="container section" id="photo">
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="./Kuvat/Poro_kelkka.jpg" alt="" class="responsive-img materialboxed">
+
+        </div>
+        <div class="col s12 l6">
+            
+            <p> <strong>Suomen poroajelut</strong> tarjoavat ainutlaatuisen mahdollisuuden kokea Lapin taianomaisen luonnon ja kulttuurin läheltä. Porot, 
+                jotka ovat olennainen osa pohjoista elämää, kuljettavat matkailijoita lumisten metsien ja tunturimaisemien halki, samalla kun niiden 
+                rauhallinen rytmi tuo mukanaan hiljaisuuden ja yhteyden luonnonvoimiin. Ajelut eivät ole pelkästään kuljetusmuoto, 
+                vaan ne ovat myös syvälle juurtunut osa saamelaista perinnettä, jossa porot ovat olleet elämän ja kulttuurin keskiössä vuosisatojen ajan. </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l4 push-l5 offset-l1">
+            <img src="./Kuvat/Poro_lähikuva-modified (1).png" alt="" class="responsive-img materialboxed ">
+
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+            
+            <p> Porot ovat luonnon todellisia kestävyysnäytteitä. Ne on sopeutunut kylmiin olosuhteisiin paksulla turkillaan ja elävät suurissa laumoissa, 
+                joissa yhteisöllisyys auttaa selviytymään ankarista ympäristöolosuhteista. Lapin ja saamelaisten kulttuurissa porot ovat paljon enemmän 
+                kuin hyötyeläimiä – ne ovat symboli luonnon ja perinteen kunnioituksesta..</p>
+
+        </div>
+    </div>
+<!--Porot loppuu-->
+
+
+<!--huskyt alkaa-->
+
+        <div class="row">
+            <div class="col s12 l4">      
+            <img src="./Kuvat/Rekikoirat.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                
+                <p> <strong>Husky safarit</strong> avaavat oven unohtumattomaan Lapin talveen, missä luonnon voima ja kulttuuriperinne 
+                    yhdistyvät ainutlaatuisella tavalla. Näillä ajeluilla pääsee kokemaan erämaan laajan hiljaisuuden ja lumipeitteen kauneuden,
+                    kun energiset huskyt vetävät perinteistä rekeä pitkin lumisia polkuja. Matkan varrella paikalliset oppaat jakavat tarinoita 
+                    Lapin tarustosta ja luonnon ihmeistä, ja jokainen hetki tuntuu kutsuvan syvempään yhteyteen luonnon ja perinteen kanssa. 
+                    Husky safarit eivät ole ainoastaan jännittävä ulkoiluseikkailu, vaan myös elämäntapa, jossa modernin maailman kiireet unohtuvat 
+                    ja aistitaan rauha sekä luonnonvoimien henki. </p>
+    
+            </div>
+        </div>
+
+         <div class="row">
+        <div class="col s12 l4 push-l5 offset-l1">
+            <img src="./Kuvat/Reki_kilpailu.jpg" alt="" class="responsive-img materialboxed ">
+
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+            
+            <p> Vetokoirina toimivat huskyt kuljettavat matkailijat läpi lumisten, huojuvien maisemien, jolloin jokainen reissu muistuttaa 
+                ainutlaatuisesta Lapin perinteestä. Näissä safareissa yhdistyvät seikkailun hurma, luonnon historia ja kulttuuriperinteen henki, 
+                jotka kaikki ovat kudottu yhteen koirien vetämän reiden kautta. Huskyt eivät ole vain työeläimiä – ne ovat Lapin wintry runoutta 
+                ruumiillistavia, eläväisenä muistuttamassa meitä luonnon voimasta ja yhteisöllisyyden merkityksestä.</p>
+
+            </div>
+        </div>
+
+<!--Huskyt loppuu-->
+
+
+<!--Scriptit bootstrappiin alkaa-->
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav ();
+            $('.materialboxed').materialbox ();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.carousel').carousel();
+            
+        });
+       </script>
+
+<!--scriptit loppuu-->
+
+</body>
+</html>
