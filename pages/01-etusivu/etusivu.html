@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapin matkailu</title>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="/resources/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="topnav">
+                <ul>
+                    <li><a href="/pages/01-etusivu/etusivu.html">Etusivu</a></li>
+                    <li><a href="/pages/02-rovaniemi/rovaniemi.html">Rovaniemi</a></li>
+                    <li><a href="/pages/03-aktiviteetit/aktiviteetit.html">Aktiviteetit</a></li>
+                    <li><a href="/pages/04-luonnonpuistot/luonnonpuistot.html">Luonnonpuistot</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <section class="container section" id="photo">
+        {CONTENT_PLACEHOLDER}
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Main footer content -->
+            <div class="footer-content">
+                <!-- Contact Information (Left) -->
+                <div class="footer-contact">
+                    <h5>Yhteystiedot</h5>
+                    <p><i class="material-icons">location_on</i> Rantatie 123, 96100 Rovaniemi</p>
+                    <p><i class="material-icons">phone</i> +358 40 123 4567</p>
+                    <p><i class="material-icons">email</i> info@tunturit.fi</p>
+                </div>
+
+                <!-- Logo (Middle) -->
+                <div class="footer-logo">
+                    <img src="/resources/images/Logo.png" alt="Tunturit ja luonnonpuistot logo">
+                </div>
+
+                <!-- Social Media Icons (Right) -->
+                <div class="footer-social">
+                    <h5>Seuraa meitä</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="material-icons">facebook</i></a>
+                        <a href="#" class="social-icon"><i class="material-icons">instagram</i></a>
+                        <a href="#" class="social-icon"><i class="material-icons">twitter</i></a>
+                        <a href="#" class="social-icon"><i class="material-icons">youtube</i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom section -->
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Tietosuojakäytäntö</a>
+                    <a href="#">Käyttöehdot</a>
+                </div>
+                <p class="copyright">© {CURRENT_YEAR} Tunturit ja luonnonpuistot. Kaikki oikeudet pidätetään.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+</html>
