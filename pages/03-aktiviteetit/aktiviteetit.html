@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{PAGE_TITLE}</title>
+    <title>Lapin Matka</title>
     
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +17,7 @@
 <body>
     <!-- Navigation -->
     <header>
+        
         <nav class="nav-wrapper transparent">
             <div class="topnav">
                 <ul>
@@ -26,10 +27,22 @@
                     <li><a href="/pages/04-luonnonpuistot/luonnonpuistot.html">Luonnonpuistot</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>        
     </header>
 
-    <!-- Main Content Area -->
+<!--Headerin video-->
+    <section class="video-header">
+    <video autoplay muted loop class="background-video">
+            <source src="/resources/images/PeuratVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+    </video>
+
+</section>
+<!--Headerin video loppuu-->
+
+<br>
+
+<!-- Main Content Area -->
 <!--Kuvat alkaa-->
 <!--Porot alkaa-->
 <section class="container section" id="photo">
@@ -62,7 +75,7 @@
         </div>
     </div>
 <!--Porot loppuu-->
-
+<br>
 
 <!--huskyt alkaa-->
 
@@ -98,9 +111,33 @@
         </div>
 
 <!--Huskyt loppuu-->
+<br>
+
+<!--Aktiviteetit visailu alkaa-->
+<center>
+    
+<h2 id="poroQUIZ"">Lapin visa</h2> 
+<div id="quiz-container"> 
+        <div id="question" class="question"></div> 
+        <div id="options"></div> 
+    <button id="next-btn" class="btn">Seuraava</button> 
+    </div> 
+    <div id="result" style="display: none;"> 
+        <h2>Tuloksesi: <span id="score"></span></h2> 
+</div> 
+</center>
+
+<!--porojen quiz scripti linkki-->
+    <script src="/resources/javascript/porotQuiz.js"></script>
+
+<!--Aktiviteetit kysely loppuu-->
+
+<br><br>
+
+<br><br>
 
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer>
         <div class="footer-container">
             <!-- Main footer content -->
@@ -142,6 +179,7 @@
     </footer>
 
     <!-- Scripts -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -152,6 +190,10 @@
             $('.tabs').tabs();
             $('.carousel').carousel();
         });
+
+    
+
+
     </script>
 </body>
 </html>
