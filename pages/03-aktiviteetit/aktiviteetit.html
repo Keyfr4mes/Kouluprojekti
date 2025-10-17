@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{PAGE_TITLE}</title>
+    <title>Lapin Matka</title>
     
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +17,7 @@
 <body>
     <!-- Navigation -->
     <header>
+        
         <nav class="nav-wrapper transparent">
             <div class="topnav">
                 <ul>
@@ -24,51 +25,128 @@
                     <li><a href="/pages/02-rovaniemi/rovaniemi.html">Rovaniemi</a></li>
                     <li><a href="/pages/03-aktiviteetit/aktiviteetit.html">Aktiviteetit</a></li>
                     <li><a href="/pages/04-luonnonpuistot/luonnonpuistot.html">Luonnonpuistot</a></li>
+
+
+                <!--Nappi joka vaihtaa teemaa!-->
+                    <button onclick="kesaNappi()" id="kesä">Kesä</button>
+
+                    <button id="talviNappi" >Talvi</button>
+                <!--Nappi loppuu-->
+
+                
                 </ul>
             </div>
-        </nav>
+        </nav>        
     </header>
 
-    <!-- Main Content Area -->
-    <section class="container section" id="photo">
-         <!-- Main Content Area -->
-    <section class="container section" id="photo">
-        <!-- -->
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="/resources/images/rovaniemi-silta.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 l6">
-                <p> Rovaniemi on Lapin pääkaupunki ja virallinen Joulupukin kotikaupunki, joka sijaitsee aivan napapiirin tuntumassa.
-                     Se tarjoaa matkailijoille ainutlaatuisen yhdistelmän arktista luontoa, kulttuuria ja talven taikaa ympäri vuoden.</p>
-            </div>
-        </div>
+<!--Headerin video-->
+    <section class="video-header">
+    <video autoplay muted loop class="background-video">
+            <source src="/resources/images/PeuratVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+    </video>
 
-        <!--  -->
-        <div class="row">
-            <div class="col s12 l4 push-l5 offset-l1">
-                <img src="/resources/images/rovaniemi-joulu.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 l6 pull-l5 right-align">
-                <p> Kaupunki tunnetaan Santa Claus Villagesta, jossa voi tavata Joulupukin, ylittää napapiirin ja lähettää kortteja Joulupukin omasta postitoimistosta.
-                    Talvella Rovaniemi muuttuu satumaiseksi maisemaksi, jossa voi nauttia revontulista, husky- ja porosafareista, sekä hiihto- ja moottorikelkkaretkistä.</p>
-            </div>
-        </div>
+</section>
+<!--Headerin video loppuu-->
 
-        <!--  -->
+<br>
+
+<!-- Main Content Area -->
+<!--Kuvat alkaa-->
+<!--Porot alkaa-->
+<section class="container section" id="photo">
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="/resources/images/Poro_kelkka.jpg" alt="" class="responsive-img materialboxed">
+
+        </div>
+        <div class="col s12 l6">
+            
+            <p> <strong>Suomen poroajelut</strong> tarjoavat ainutlaatuisen mahdollisuuden kokea Lapin taianomaisen luonnon ja kulttuurin läheltä. Porot, 
+                jotka ovat olennainen osa pohjoista elämää, kuljettavat matkailijoita lumisten metsien ja tunturimaisemien halki, samalla kun niiden 
+                rauhallinen rytmi tuo mukanaan hiljaisuuden ja yhteyden luonnonvoimiin. Ajelut eivät ole pelkästään kuljetusmuoto, 
+                vaan ne ovat myös syvälle juurtunut osa saamelaista perinnettä, jossa porot ovat olleet elämän ja kulttuurin keskiössä vuosisatojen ajan. </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l4 push-l5 offset-l1">
+            <img src="/resources/images/Poro_lähikuva.png" alt="" class="responsive-img materialboxed ">
+
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+            
+            <p> Porot ovat luonnon todellisia kestävyysnäytteitä. Ne on sopeutunut kylmiin olosuhteisiin paksulla turkillaan ja elävät suurissa laumoissa, 
+                joissa yhteisöllisyys auttaa selviytymään ankarista ympäristöolosuhteista. Lapin ja saamelaisten kulttuurissa porot ovat paljon enemmän 
+                kuin hyötyeläimiä – ne ovat symboli luonnon ja perinteen kunnioituksesta..</p>
+
+        </div>
+    </div>
+<!--Porot loppuu-->
+<br>
+
+<!--huskyt alkaa-->
+
         <div class="row">
             <div class="col s12 l4">      
-                <img src="/resources/images/rovaniemi-maisema.jpg" alt="" class="responsive-img materialboxed">
+            <img src="/resources/images/Rekikoirat.jpg" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 l6">
-                <p> Kulttuurinnälkäisille tarjolla on Arktikum, joka esittelee arktisen alueen luontoa, historiaa ja saamelaiskulttuuria, sekä Aalto-keskus,
-                    Alvar Aallon suunnittelema kaupungin hallinnollinen ja kulttuurinen sydän. Kesällä Ounasvaaran alue houkuttelee patikointiin, maastopyöräilyyn ja melontaan.</p>
+                
+                <p> <strong>Husky safarit</strong> avaavat oven unohtumattomaan Lapin talveen, missä luonnon voima ja kulttuuriperinne 
+                    yhdistyvät ainutlaatuisella tavalla. Näillä ajeluilla pääsee kokemaan erämaan laajan hiljaisuuden ja lumipeitteen kauneuden,
+                    kun energiset huskyt vetävät perinteistä rekeä pitkin lumisia polkuja. Matkan varrella paikalliset oppaat jakavat tarinoita 
+                    Lapin tarustosta ja luonnon ihmeistä, ja jokainen hetki tuntuu kutsuvan syvempään yhteyteen luonnon ja perinteen kanssa. 
+                    Husky safarit eivät ole ainoastaan jännittävä ulkoiluseikkailu, vaan myös elämäntapa, jossa modernin maailman kiireet unohtuvat 
+                    ja aistitaan rauha sekä luonnonvoimien henki. </p>
+    
             </div>
         </div>
-    </section>
-    </section>
 
-    <!-- Footer -->
+         <div class="row">
+        <div class="col s12 l4 push-l5 offset-l1">
+            <img src="/resources/images/Reki_kilpailu.jpg" alt="" class="responsive-img materialboxed ">
+
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+            
+            <p> Vetokoirina toimivat huskyt kuljettavat matkailijat läpi lumisten, huojuvien maisemien, jolloin jokainen reissu muistuttaa 
+                ainutlaatuisesta Lapin perinteestä. Näissä safareissa yhdistyvät seikkailun hurma, luonnon historia ja kulttuuriperinteen henki, 
+                jotka kaikki ovat kudottu yhteen koirien vetämän reiden kautta. Huskyt eivät ole vain työeläimiä – ne ovat Lapin wintry runoutta 
+                ruumiillistavia, eläväisenä muistuttamassa meitä luonnon voimasta ja yhteisöllisyyden merkityksestä.</p>
+
+            </div>
+        </div>
+
+<!--Huskyt loppuu-->
+<br>
+
+<!--Aktiviteetit visailu alkaa-->
+<center>
+    
+<h2 id="poroQUIZ"">Lapin visa</h2> 
+<div id="quiz-container"> 
+        <div id="question" class="question"></div> 
+        <div id="options"></div> 
+    <button id="next-btn" class="btn">Seuraava</button> 
+    </div> 
+    <div id="result" style="display: none;"> 
+        <h2>Tuloksesi: <span id="score"></span></h2> 
+</div> 
+</center>
+
+<!--porojen quiz scripti linkki-->
+    <script src="/resources/javascript/porotQuiz.js"></script>
+
+<!--Aktiviteetit kysely loppuu-->
+
+<br><br>
+
+<br><br>
+
+
+<!-- Footer -->
     <footer>
         <div class="footer-container">
             <!-- Main footer content -->
@@ -109,8 +187,8 @@
         </div>
     </footer>
 
-
     <!-- Scripts -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -121,6 +199,35 @@
             $('.tabs').tabs();
             $('.carousel').carousel();
         });
+
+
+    //Kesänappi functio, joka vaihtaa teemän kesäiseksi
+    //Napattu elementit Javascriptiin
+        let boddy = document.querySelector("body")
+        let footy = document.querySelector("footer")
+        let head = document.querySelector("header")
+        let par = document.querySelectorAll("p")
+
+
+    //kesänappi funktio
+        function kesaNappi () {
+
+            boddy.style.backgroundImage = "url('/resources/images/kesaPolkuTausta.jpg')";
+            boddy.style.border = '50px solid rgba(11, 105, 3, 0.521)';
+            footy.style.backgroundColor = "rgba(11, 105, 3, 0.9)";
+            head.style.backgroundColor = "rgba(11, 105, 3, 0.9)";
+            par.style.backgroundColor= "#F2B705";
+        }
+
+    // Talvinappi funktio, joka palauttaa vain aiemmat tyylit 
+        talviNappi.addEventListener('click', () => {
+            boddy.style.backgroundImage = ''; 
+            boddy.style.border = ''; 
+            footy.style.backgroundColor = ''; 
+            head.style.backgroundColor = ''; 
+    });
+
+
     </script>
 </body>
 </html>
